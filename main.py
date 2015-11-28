@@ -8,7 +8,7 @@ app = Flask(__name__, instance_relative_config=True,static_url_path="/static")
 
 @app.route('/')
 def index():
-	return 'Harpreet Boparai'
+	return render_template('index.html')
 
 if __name__ == '__main__':
 	app.run('0.0.0.0')
